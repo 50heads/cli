@@ -1,0 +1,51 @@
+{
+  "name": "@50heads/cli",
+  "version": "2026.1006.1",
+  "description": "50heads on the command line: ask verified real people from scripts and CI, wait for the answers and read the results.",
+  "keywords": [
+    "50heads",
+    "cli",
+    "human feedback",
+    "a/b test",
+    "polls"
+  ],
+  "homepage": "https://50heads.com/docs/sdks#cli",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/50heads/cli.git"
+  },
+  "bugs": "https://github.com/50heads/cli/issues",
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "bin": {
+    "50heads": "dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.18.0",
+    "esbuild": "^0.28.2",
+    "typescript": "^5.9.3",
+    "zod": "^4.6.5",
+    "@50heads/login": "0.0.0",
+    "@50heads/mcp": "2026.925.2",
+    "@50heads/shared": "0.0.0",
+    "@50heads/tsconfig": "0.0.0"
+  },
+  "scripts": {
+    "build": "node scripts/build.ts",
+    "typecheck": "tsc -p tsconfig.json",
+    "test": "node --test \"src/**/*.test.ts\" \"scripts/**/*.test.ts\"",
+    "release": "node scripts/release.ts"
+  }
+}
