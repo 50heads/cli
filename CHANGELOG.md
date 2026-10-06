@@ -8,6 +8,10 @@ Add what changed under Unreleased as you go, written for the people using it. Th
 
 ## [Unreleased]
 
+## [2026.1006.2] - 2026-10-06
+
+Maintenance release. No change to tools, resources or prompts.
+
 ## [2026.1006.1] - 2026-10-06
 
 Maintenance release. No change to tools, resources or prompts.

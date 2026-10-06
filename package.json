@@ -1,6 +1,6 @@
 {
   "name": "@50heads/cli",
-  "version": "2026.1006.1",
+  "version": "2026.1006.2",
   "description": "50heads on the command line: ask verified real people from scripts and CI, wait for the answers and read the results.",
   "keywords": [
     "50heads",
