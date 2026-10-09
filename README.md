@@ -1,6 +1,6 @@
 # 50heads CLI
 
-Ask verified real people from a script, a Makefile or CI, wait for the answers and read the split. 20 credits an answer at Tier 1, priced in your account's currency; fifty answers take about ten minutes.
+Ask verified people from a script, a Makefile or CI, wait for the answers and read the split. 20 credits an answer at Tier 1, priced in your account's currency; fifty answers take about ten minutes.
 
 ```sh
 npx -y @50heads/cli --help
@@ -70,7 +70,7 @@ Wrap it as `{"draft": {…}, "then": [{"text": "Why did you pick {winner}?"}]}` 
 cat asks.jsonl | 50heads ask - --json
 ```
 
-CSV columns (a header row, any order): `text` (required), `type`, `options` (`A|B|C`) or `option1` to `option8`, `images` (`|`, in option order), `context`, `language`, `n`, `tier`, `rush`, `neither`, `countries` (`|`), `tags` (`|`), `stimulus_image`, `stimulus_text`. Every row is checked before anything is asked; a row that fails is reported and the rest go ahead (exit 8).
+CSV columns (a header row, any order): `text` (required), `type`, `options` (`A|B|C`) or `option1` to `option8`, `images` (`|`, in option order), `context`, `language`, `n`, `tier`, `rush`, `neither`, `mostly` (on a yes/no row, adds Mostly; otherwise the row is Yes or No), `countries` (`|`), `tags` (`|`), `stimulus_image`, `stimulus_text`. Every row is checked before anything is asked; a row that fails is reported and the rest go ahead (exit 8).
 
 ### Never twice by accident
 
