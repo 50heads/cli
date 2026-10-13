@@ -8,6 +8,15 @@ Pending changes are captured as changesets and written here when the package is 
 
 ## [Unreleased]
 
+## [2026.1013.2] - 2026-10-13
+
+**This release aligns the repository description with the package description and removes any time promise from it.** It also narrows glama.json mirrors to 50heads-team only.
+
+### Changed
+
+- **The repository description now matches the package description and no longer carries a time promise.**
+- **glama.json mirrors are now limited to 50heads-team only.**
+
 ## [2026.1013.1] - 2026-10-13
 
 **@50heads/cli 2026.1013.1 adds filing, organisation, webhook, answers export and approval flows, plus new status and limits commands.** It also changes login scopes for organisation admin access and updates wording and output to US English, with no change to commands or tools beyond the MCP server tool count.
@@ -76,3 +85,5 @@ Pending changes are captured as changesets and written here when the package is 
 [2026.1009.1]: https://github.com/50heads/cli/releases/tag/v2026.1009.1
 
 [2026.1013.1]: https://github.com/50heads/cli/releases/tag/v2026.1013.1
+
+[2026.1013.2]: https://github.com/50heads/cli/releases/tag/v2026.1013.2
